@@ -43,18 +43,14 @@ const PageLayout: React.FC<Props> = ({children, privateRoute, title, redirectPat
             </title>
         </Head>
         <div className="fixed w-full">
-            <div className="h-1 bg-gradient-to-r from-teal-400 to-blue-600"/>
+            <div className="h-2 bg-black"/>
             <div className="flex justify-between py-2.5 px-4 shadow-md items-center bg-white">
-                <a href="https://github.com/nthnluu/no-bs-next"
-                   className="flex justify-between items-center font-medium text-lg focus:underline truncate">
-                    🔥 nthnluu/no-bs-next
+                <a href="/"
+                   className="flex justify-between items-center font-medium text-2xl focus:underline truncate">
+                    John Ezell
                 </a>
                 <div className="items-center">
-                    {isAuthenticated ? <Button sizes="md" variant="filled" onClick={signOut}>Sign out</Button> :
-                        <span className="space-x-2">
-                    <Button onClick={() => router.push('/auth/signin')} sizes="md" variant="light">Log in</Button>
-                    <Button onClick={() => router.push('/auth/signup')} sizes="md" variant="filled">Sign up</Button>
-                </span>}
+                    {/*Right Side*/}
                 </div>
 
             </div>
