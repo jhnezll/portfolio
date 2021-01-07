@@ -1,12 +1,14 @@
 import React from "react";
 import PageLayout from "../components/PageLayout";
+import {MenuToggle} from "../components/PageLayout/MenuToggle";
+import {useCycle} from "framer-motion";
+
 
 
 export default function Home() {
-
     return (
-        <PageLayout title="Hi, I'm John Ezell!">
-            <div className="h-screen flex items-center px-12 bg-gray-50">
+        <PageLayout title="Hi, I'm John Ezell">
+            <div className="h-screen flex items-center px-12">
                 <div className="max-w-screen-sm space-y-2">
                     {/*Text Block*/}
                     <div>
@@ -19,7 +21,7 @@ export default function Home() {
                     </div>
                     {/*Button Block*/}
                     <div>
-                        <button className="text-sm md:text-xl button mt-4">View Work</button>
+                        <button className="text-sm md:text-xl button mt-4 focus:outline-none">View Work</button>
                     </div>
                 </div>
             </div>
