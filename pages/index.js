@@ -2,10 +2,15 @@ import React from "react";
 import PageLayout from "../components/PageLayout";
 import {MenuToggle} from "../components/PageLayout/MenuToggle";
 import {useCycle} from "framer-motion";
+import {useRouter} from "next/router";
+
 
 
 
 export default function Home() {
+    const router = useRouter()
+
+
     return (
         <PageLayout title="Hi, I'm John Ezell">
             <div className="h-screen flex items-center px-12">
@@ -21,7 +26,7 @@ export default function Home() {
                     </div>
                     {/*Button Block*/}
                     <div>
-                        <button className="text-sm md:text-xl button mt-4 focus:outline-none">View Work</button>
+                        <button className="text-sm md:text-xl button mt-4 focus:outline-none" onClick={() => router.push("/contact")}>Contact Me</button>
                     </div>
                 </div>
             </div>

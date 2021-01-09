@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import fb from "../util/firebase-config";
 import SessionContext from "../util/SessionContext";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 function MyApp({Component, pageProps}: AppProps) {
 
@@ -30,12 +31,23 @@ function MyApp({Component, pageProps}: AppProps) {
     // Waits until the session is loaded before loading the page
     if (!sessionLoaded) return null
 
-    return (<SessionContext.Provider value={{isAuthenticated, userProfile}}>
-        <Head>
-            <title>No BS Next</title>
-        </Head>
-        <Component {...pageProps} />
-    </SessionContext.Provider>)
+    return (
+        <SessionContext.Provider value={{isAuthenticated, userProfile}}>
+            <Head>
+                <title>John Ezell</title>
+            </Head>
+            <motion.div initial="pageInitial" animate="pageAnimate" variants={{
+                pageInitial: {
+                    opacity: 0
+                },
+                pageAnimate: {
+                    opacity: 1
+                },
+            }}>
+                <Component {...pageProps} />
+            </motion.div>
+        </SessionContext.Provider>
+    )
 }
 
 export default MyApp

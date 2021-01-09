@@ -30,7 +30,7 @@ const RedirectHome = () => {
 
 const sidebar = {
     open: (height = 1000) => ({
-        clipPath: `circle(${height * 2 + 200}px)`,
+        clipPath: `circle(${height * 2 + 200}px at 100% 0px)`,
         transition: {
             type: "spring",
             stiffness: 20,
@@ -38,7 +38,7 @@ const sidebar = {
         }
     }),
     closed: {
-        clipPath: "circle(0px)",
+        clipPath: "circle(0px at 100% 0px)",
         transition: {
             delay: 0.5,
             type: "spring",
@@ -75,7 +75,7 @@ const PageLayout: React.FC<Props> = ({children, privateRoute, title, redirectPat
             <div className="h-2 bg-black"/>
             <div className="flex justify-between py-2.5 px-4 shadow-md items-center bg-white">
                 <a href="/"
-                   className="flex justify-between items-center font-medium text-2xl focus:underline truncate">
+                   className="flex justify-between items-center font-medium text-2xl focus:underline truncate hover:text-gray-500">
                     John Ezell
                 </a>
                 <div className="items-center">

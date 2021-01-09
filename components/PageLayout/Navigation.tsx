@@ -12,11 +12,10 @@ const variants = {
 };
 
 export const Navigation = () => (
-    <motion.ul className="text-4xl cursor-pointer" variants={variants}>
-        <a href="/"><MenuItem text="Home"/></a>
-        <MenuItem text="Work"/>
+    <motion.ul className="text-4xl cursor-pointer overflow-hidden" variants={variants}>
+        <a href="/"><MenuItem text="Work"/></a>
         <a href="/about"><MenuItem text="About"/></a>
-        <MenuItem text="Contact"/>
+        <a href="/contact"><MenuItem text="Contact"/></a>
     </motion.ul>
 );
 
