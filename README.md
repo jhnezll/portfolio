@@ -8,7 +8,7 @@
   <h3 align="center">No BS Next Boilerplate 🔥</h3>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Aboutme The Project
 
 This boilerplate is designed to be the perfect starting point for any React project 
 as frontend and Firebase as backend. Jump right into building features and worry less about setting up boilerplate.

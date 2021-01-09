@@ -24,6 +24,7 @@ const colors = ["#000", "#000", "#000", "#000", "#000"];
 export const MenuItem = ({text}) => {
     return (
         <motion.li
+            className="menu-li"
             variants={variants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}

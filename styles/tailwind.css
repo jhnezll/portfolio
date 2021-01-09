@@ -43,7 +43,6 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    cursor: pointer;
     position: absolute;
     top: 12px;
     right: 0px;
@@ -67,12 +66,11 @@ ul {
     width: 100%;
 }
 
-li {
+.menu-li {
     list-style: none;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
 
 .text-placeholder {
@@ -94,7 +92,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 
