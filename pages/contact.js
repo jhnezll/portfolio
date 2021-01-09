@@ -21,6 +21,14 @@ export default function Contact() {
             }, (error) => {
                 console.log(error.text);
             });
+        setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+        })
+        alert("Thank you for contacting me! I will respond as soon as I can.")
+
     }
 
     return(
