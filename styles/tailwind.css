@@ -94,5 +94,10 @@ ul {
     align-items: center;
 }
 
+.large-icon {
+    transform: scale(2.2);
+    margin: 5px;
+}
+
 
 @tailwind  utilities;
